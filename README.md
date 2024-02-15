@@ -8,20 +8,18 @@ Arrow.js is a tiny library (4.5kb gzipped) for displaying an arrow pointing to t
 Include the javascript in your HTML
 
 ```html
-<script type="text/javascript" src="bower_components/ArrowJS/src/js/arrow.js">
+<script type="text/javascript" src="node_modules/ArrowJS/src/js/arrow.js">
 ```
 
 Or use the minified version
 
 ```html
-<script type="text/javascript" src="bower_components/ArrowJS/dist/arrow-0.1.9.min.js">
+<script type="text/javascript" src="node_modules/ArrowJS/dist/arrow-1.0.0.min.js">
 ```
 
-### Installing with Bower
+### Installing with NPM
 
-Bower requires [Node](http://nodejs.org/) and [npm](http://npmjs.org/). 
-
-    bower install arrow-js --save
+    npm install walkx-arrow-js --save
 
 ### How to use
 
@@ -48,64 +46,15 @@ Arrow._browser;
 Arrow._browserVersion 
 ```
 
-### Browser Support
-
-Chrome 4+, Firefox 3.5+, IE 8+, Edge (Windows 10), Safari
-
-* The Firefox download manager was introduced in version 23 so the arrow will point in the top right.
-
-* Chrome downloads start at the bottom left of the page.
-
-* IE 9/10 downloads start in the bottom center.
-
-* IE 8 downloads come up in the center of the screen unless the security warnings comes up at the top of the page. So the arrow points at the top left.
-
-### Screenshots
-
-Chrome
-
-![Chrome](http://i.imgur.com/1zW8EYG.png)
-
-Firefox
-
-![Firefox](http://i.imgur.com/6EgcJId.png)
-
-IE 9/10 Wide Screen
-
-![IE 9/10 Wide](http://i.imgur.com/WyDd3j4.png)
-
-IE 9/10 Narrow Screen
-
-![IE 9/10 Narrow](http://i.imgur.com/fztArJ3.png)
-
-IE 11
-
-![IE11](http://i.imgur.com/7CusGBs.jpg)
-
-EDGE
-
-![EDGE](http://i.imgur.com/gEOk2ql.jpg)
-
-Safari
-
-![Safari](http://i.imgur.com/3zGlG50.png)
-	
-
-### Library Size
-
-Original: 12482 bytes.
-
-Minified: 4547 bytes.
-
 ### Maintainer
 
-[Petar Bojinov](https://github.com/pbojinov)
+[Bjorn Lammers](https://github.com/walkxcode)
 
 ### License
 
 The MIT License (MIT)
 
-Copyright (c) 2017 Petar Bojinov
+Copyright (c) 2024 Bjorn Lammers
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
