@@ -19,7 +19,7 @@ Or use the minified version
 
 ### Installing with NPM
 
-    npm install walkx-arrow-js --save
+    npm install ucs-arrow-js --save
 
 ### How to use
 

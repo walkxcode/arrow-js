@@ -137,6 +137,7 @@ window.Arrow = (function (window, document, undefined) {
     node.style.left = "20px";
     node.style.transform = "rotateX(180deg) rotateY(180deg)";
     node.style.webkitTransform = "rotateX(180deg) rotateY(180deg)";
+    node.style.msTransform = "rotateX(180deg) rotateY(180deg)";
   }
 
   /**
@@ -151,6 +152,7 @@ window.Arrow = (function (window, document, undefined) {
     node.style.left = "50%";
     node.style.transform = "rotateX(180deg) rotateY(180deg)";
     node.style.webkitTransform = "rotateX(180deg) rotateY(180deg)";
+    node.style.msTransform = "rotateX(180deg) rotateY(180deg)";
   }
 
   /**
@@ -172,8 +174,8 @@ window.Arrow = (function (window, document, undefined) {
    * @private
    */
   function _applyStyleWebkit(node) {
-    node.style.top = "0px";
-    node.style.right = "68px";
+    node.style.top = "30px";
+    node.style.right = "100px";
   }
 
   /**
@@ -184,7 +186,7 @@ window.Arrow = (function (window, document, undefined) {
    * @private
    */
   function _applyStyleSafari(node) {
-    node.style.top = "0px";
+    node.style.top = "30px";
     node.style.right = "80px";
   }
 
@@ -231,7 +233,7 @@ window.Arrow = (function (window, document, undefined) {
     div.classList.add("arrow-js-arrow");
     arrowNode = div; //only used in resizing ie9
     div.innerHTML =
-      '<svg xmlns="http://www.w3.org/2000/svg" transform="rotate(270) scale(1,-1)" width="120" height="128" style="height: inherit;" fill="#0cb745" fill-rule="nonzero" viewBox="0 0 22.703 21.928"> <path d="M1.056,21.928c0-6.531,5.661-9.034,10.018-9.375V18.1L22.7,9.044,11.073,0V4.836A10.5,10.5,0,0,0,3.729,8.188C-.618,12.946-.008,21,.076,21.928Z"/></svg> ';
+      '<svg xmlns="http://www.w3.org/2000/svg" transform="rotate(270) scale(1,-1)" width="120" height="128" style="height: inherit; filter: drop-shadow(0px 0px 5px rgb(0 0 0 / 0.5));" fill="#ff8c00" fill-rule="nonzero" viewBox="0 0 22.703 21.928"> <path d="M1.056,21.928c0-6.531,5.661-9.034,10.018-9.375V18.1L22.7,9.044,11.073,0V4.836A10.5,10.5,0,0,0,3.729,8.188C-.618,12.946-.008,21,.076,21.928Z"/></svg> ';
     return div;
   }
 
